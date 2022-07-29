@@ -1,0 +1,32 @@
+.footer__container-inner {
+  display: flex;
+  padding-top: 26px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__phone-num {
+  color: #365a49;
+  text-decoration: none;
+  font-family: AlegreyaSans-Regular;
+  font-size: 21px;
+}
+
+.footer__phone-logo {
+  color: #365a49;
+}
+
+.footer__contacts {
+  font-size: 21px;
+  font-family: AlegreyaSans-Regular;
+}
+
+.footer__socials-img {
+  width: 20px;
+  height: 20px;
+  margin-right: 20px;
+}
+
+.footer__list {
+  display: flex;
+}

@@ -1,0 +1,37 @@
+.nav {
+  margin-right: rem(46px);
+}
+
+.nav__list {
+  display: flex;
+}
+
+.nav__item {
+  display: flex;
+
+  @include tablets {
+    display: none;
+  }
+}
+
+.nav__link {
+  font-size: rem(18px);
+  margin-right: rem(27px);
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav:not(:last-child) {
+  margin: 0;
+}
+
+.nav__sub-list {
+  display: none;
+
+  @include tablets {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+}

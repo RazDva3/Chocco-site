@@ -1,0 +1,228 @@
+.delivery-section {
+  background: url('/img/delivery-background.jpg') center center / cover no-repeat;
+  position: relative;
+}
+
+.delivery-section::before {
+  content: url('/img/delivery-leaf.png');
+  display: block;
+  position: absolute;
+  bottom: rem(80px);
+  right: 0;
+
+  @include tablets {
+    display: none;
+  }
+}
+
+.delivery-section::after {
+  content: url('/img/delivery-blueberry.png');
+  display: block;
+  position: absolute;
+  left: rem(20px);
+  bottom: rem(85px);
+
+  @include tablets {
+    display: none;
+  }
+}
+
+.delivery__container {
+  justify-content: center;
+  height: 100%;
+}
+
+.delivery__header {
+  padding: rem(86px) rem(0px) rem(55px);
+}
+
+.delivery__header-title {
+  margin: 0 auto;
+  font-family: AlegreyaSans-Bold;
+  font-size: rem(48px);
+  color: #365a49;
+  text-transform: uppercase;
+}
+
+.delivery__content {
+  max-width: rem(940px);
+  min-height: rem(390px);
+
+}
+
+.delivery__content input {
+  border: none;
+}
+
+.delivery__content label {
+  font-family: AlegreyaSans-Regular;
+  color: #365a49;
+  font-size: rem(18px);
+}
+
+.delivery__content-inner {
+  display: flex;
+
+  @include tablets {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.delivery__content-left {
+  margin-right: rem(20px);
+  max-width: rem(470px);
+
+  @include tablets {
+    margin: 0;
+  }
+}
+
+.delivery__content-left input {
+  padding-left: rem(10px);
+  font-family: OpenSans;
+  font-size: rem(18px);
+  min-height: rem(60px);
+
+  @include tablets {
+    min-height: 35px;
+  }
+}
+
+.delivery__content-left input:focus {
+  outline: rem(3px) solid #dee2bd;
+}
+
+.delivery__left-top {
+  width: rem(460px);
+  margin-bottom: rem(20px);
+  display: flex;
+}
+
+.delivery__left-top label {
+  margin-right: rem(20px);
+}
+
+.delivery__left-top input {
+  width: rem(220px);
+}
+
+.delivery__left-center {
+  margin-bottom: rem(20px);
+}
+
+.delivery__left-center input {
+  width: rem(460px);
+}
+
+.delivery__left-bottom {
+  display: flex;
+}
+
+.delivery__left-bottom label {
+  margin-right: rem(20px);
+}
+
+.delivery__left-bottom input {
+  width: rem(100px);
+}
+
+.delivery__content-right {
+  max-width: rem(470px);
+  min-height: rem(380px);
+
+  @include tablets {
+    padding-top: 10px;
+  }
+}
+
+.delivery__right-text textarea {
+  padding-top: rem(22px);
+  padding-left: rem(10px);
+  font-family: OpenSans;
+  font-size: rem(18px);
+  width: rem(460px);
+  border: none;
+  min-height: rem(180px);
+  resize: none;
+
+  @include tablets {
+    max-width: 440px;
+    min-height: 80px;
+  }
+}
+
+.delivery__right-text textarea:focus {
+  outline: rem(3px) solid #dee2bd;
+}
+
+.delivery__right-choice {
+  margin-top: rem(21px);
+}
+
+.delivery__choice-radio {
+  display: flex;
+}
+
+.delivery__choice-radio label {
+  margin-right: rem(23px);
+  display: inline-flex;
+  line-height: rem(30px);
+}
+
+.delivery__choice-radio input {
+  appearance: none;
+  border-radius: 50%;
+  border: rem(6px) solid #fff;
+  background-color: #fff;
+  margin-right: rem(10px);
+  width: rem(26px);
+  height: rem(26px);
+}
+
+.delivery__choice-radio input:checked {
+  background-color: #365a49;
+}
+
+.delivery__choice-checkbox label {
+  margin-top: rem(8px);
+  display: inline-flex;
+  line-height: rem(30px);
+}
+
+.delivery__choice-checkbox input {
+  appearance: none;
+  border: rem(8px) solid #fff;
+  background-color: #fff;
+  width: rem(26px);
+  height: rem(26px);
+  margin-right: rem(10px);
+}
+
+.delivery__choice-checkbox input:checked {
+  content: url('/icons/checkmark.svg');
+}
+
+.delivery__right-btn {
+  margin-top: rem(8px);
+
+  @include tablets {
+    padding-left: 100px;
+  }
+}
+
+.delivery__right-btn .btn {
+  background-color: #365a49;
+  color: #fff;
+}
+
+.delivery__right-btn .btn:hover {
+  background-color: #fff;
+  color: #365a49;
+}
+
+.delivery__right-btn .btn__reset {
+  margin-left: rem(30px);
+  font-size: rem(18px);
+  font-family: AlegreyaSans-Regular;
+}

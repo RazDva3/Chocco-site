@@ -1,0 +1,55 @@
+.header {
+  font-family: AlegreyaSans-Regular;
+  display: flex;
+  align-items: center;
+
+  @include tablets {
+    justify-content: space-between;
+  }
+}
+
+.header__logo {
+  margin-right: 43px;
+
+  @include tablets {
+    padding-left: 25px;
+  }
+}
+
+.header__buttons {
+  align-items: center;
+  display: flex;
+  line-height: 30px;
+}
+
+.header__phone {
+  align-items: center;
+  display: flex;
+  padding-left: 16px;
+  padding-bottom: 8px;
+
+  @include tablets {
+    display: none;
+  }
+}
+
+.phone {
+  color: #fff;
+  font-size: rem(24px);
+  text-decoration: none;
+}
+
+.phone-logo,
+.footer__phone-logo {
+  margin-right: 6px;
+  width: rem(12px);
+  height: rem(11px);
+}
+
+.header__menu-btn {
+  display: none;
+
+  @include tablets {
+    display: flex;
+  }
+}

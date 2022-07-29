@@ -1,0 +1,188 @@
+.hero {
+  background: url('/img/hero-background.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  background: url('/img/hero-leaf_left.png');
+  background-repeat: no-repeat;
+  display: block;
+  position: absolute;
+  bottom: rem(-35px);
+  left: rem(30px);
+  width: 59px;
+  height: 112px;
+
+  @include tablets {
+    background-size: 40px;
+    left: 27%;
+    bottom: 48%;
+  }
+
+  @include phones {
+    left: 13%;
+  }
+}
+
+.hero::after {
+  content: "";
+  background: url('/img/hero-leaf_down.png');
+  background-repeat: no-repeat;
+  display: block;
+  position: absolute;
+  bottom: rem(-30px);
+  right: 20%;
+  width: 145px;
+  height: 105px;
+
+  @include tablets {
+    background-size: 90px;
+    right: 34%;
+    bottom: 42%;
+  }
+
+  @include phones {
+    right: 22%;
+  }
+}
+
+.hero__container {
+  padding: rem(24px) 0px rem(47px) 0px;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.hero__container::after {
+  content: "";
+  background: url('/img/hero-blackberry.png');
+  background-repeat: no-repeat; 
+  display: block;
+  position: absolute;
+  bottom: rem(-40px);
+  right: rem(89px);
+  width: 111px;
+  height: 108px;
+
+  @include tablets {
+    background: url('/img/hero-berries-adaptive.png');
+    bottom: 47%;
+    right: 27%;
+    width: 329px;
+    height: 231px;
+  }
+
+  @include phones {
+    right: 10%;
+  }
+}
+
+.hero__container::before {
+  content: "";
+  background: url('/img/hero-leaf_right.png');
+  background-repeat: no-repeat;   
+  display: block;
+  position: absolute;
+  right: rem(17px);
+  bottom: rem(90px);
+  width: 236px;
+  height: 203px;
+
+  @include tablets {
+    background-size: 120px;
+    right: 10%;
+    top: 33%;
+  }
+
+  @include phones {
+    right: -10%;
+  }
+}
+
+.hero__content {
+  display: flex;
+
+  @include tablets {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.hero__content:after {
+  content: "";
+  background: url('/img/hero-currant-raspberry.png');
+  background-repeat: no-repeat; 
+  display: block;
+  bottom: rem(37px);
+  position: absolute;
+  right: 17%;
+  width: 220px;
+  height: 208px;
+
+  @include tablets {
+    display: none;
+  }
+}
+
+.hero__content-image {
+
+  &-bars {
+
+    @include tablets {
+      width: 343px;
+      height: 356px;
+      order: 2;
+    }
+
+    @include phones {
+      width: 317px;
+      height: 330px;
+    }
+  }
+}
+
+.hero__content-desc {
+  padding: 90px 0px 50px 0px;
+  max-width: 360px;
+
+  @include tablets {
+    padding: 38px 0px 0px;
+    order: 1;
+    text-align: center;
+    max-width: 100%;
+  }
+}
+
+.hero__content-desc-title {
+  text-align: left;
+  font-family: AlegreyaSans-Bold;
+  font-weight: bold;
+  font-size: rem(48px);
+  text-transform: uppercase;
+  color: #fff;
+  line-height: 1.2;
+  margin-bottom: 0;
+
+  @include tablets {
+    max-width: 652px;
+    text-align: center;
+  }
+}
+
+.hero__content-desc-text {
+  color: #fff;
+  font-family: AlegreyaSans-Regular;
+  font-size: rem(21px);
+  padding-top: 2px;
+  line-height: 27px;
+
+  @include tablets {
+    margin: 0 auto;
+    text-align: center;
+    max-width: 340px;
+  }
+}

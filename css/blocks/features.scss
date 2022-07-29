@@ -1,0 +1,39 @@
+.features {
+  max-width: rem(470px);
+  min-height: rem(60px);
+  display: flex;
+
+  @include tablets {
+    display: none;
+  }
+}
+
+.features__item {
+  display: flex;
+  margin-right: rem(50px);
+  color: #fff;
+}
+
+.feature__icon {
+  margin-right: rem(7px);
+}
+
+.feature__icon-symbol-leaf {
+  width: rem(44px);
+  height: rem(41px);
+}
+
+.feature__icon-symbol-car {
+  width: rem(50px);
+  height: rem(40px);
+}
+
+.feature__icon-symbol-weight {
+  width: rem(42px);
+  height: rem(42px);
+}
+
+.feature__text {
+  font-family: AlegreyaSans-Regular;
+  font-size: rem(16px);
+}

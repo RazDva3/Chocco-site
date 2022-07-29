@@ -1,0 +1,162 @@
+.benefits-section {
+  background-image: url('/img/benefits-background.png');
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center left;
+
+  @include phones {
+    background-image: none;
+  }
+}
+
+.benefits-section::after {
+  content: url('/img/benefits-raspberry.png');
+  position: absolute;
+  display: block;
+  left: 0;
+  bottom: rem(-120px);
+  z-index: 1;
+
+  @include phones {
+    display: none;
+  }
+}
+
+.benefits__container {
+  justify-content: center;
+  padding: rem(115px) rem(0px) rem(55px);
+  height: 100%;
+}
+
+.benefits__caption {
+  margin: 0 auto;
+  max-width: rem(400px);
+  min-height: rem(100px);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.benefits__caption-inner {
+  text-transform: uppercase;
+  font-family: AlegreyaSans-Bold;
+  font-size: rem(44px);
+  color: #000;
+  margin-bottom: rem(25px);
+  
+  @include phones {
+    font-size: 38px;
+  }
+}
+
+.benefits__caption-desc {
+  font-family: AlegreyaSans-Regular;
+  font-weight: bold;
+  font-size: rem(17px);
+  color: #666;
+}
+
+.benefits__content {
+  max-width: rem(950px);
+  min-height: rem(270px);
+
+  @include phones {
+    margin: 0 auto;
+  }
+}
+
+.benefits__list {
+  display: flex;
+  margin-top: rem(57px);
+
+  @include phones {
+    flex-direction: column;
+  }
+}
+
+.benefits__item {
+  display: inline-block;
+  text-align: center;
+
+  @include phones {
+    display: flex;
+    padding-top: 40px;
+  }
+}
+
+.benefits__item:first-child {
+  padding: 0;
+}
+
+.benefits__ellips {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: rem(125px);
+  min-height: rem(125px);
+  border-radius: 50%;
+  background-color: #f3f5f3;
+  padding: rem(27px) rem(30px) rem(29px) rem(29px);
+
+  @include phones {
+    margin: 0;
+  }
+}
+
+.benefits__item-inner {
+  @include phones {
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.benefits__image-man {
+  width: rem(66px);
+  height: rem(69px);
+}
+
+.benefits__image-smile {
+  width: rem(70px);
+  height: rem(69px);
+}
+
+.benefits__image-muscle {
+  width: rem(75px);
+  height: rem(64px);
+}
+
+.benefits__item-points {
+  margin: rem(50px) 0px;
+
+  @include tablets {
+    display: none;
+  }
+}
+
+.benefits__image-points {
+  width: rem(67px);
+  height: rem(21px);
+}
+
+.benefits-item__head {
+  margin-top: rem(15px);
+  font-family: AlegreyaSans-Bold;
+
+  @include phones{
+    margin: 0;
+    margin-bottom: 8px;
+  }
+}
+
+.benefits-item__desc {
+  font-family: AlegreyaSans-Regular;
+  font-weight: 300;
+  color: #666;
+  font-size: rem(18px);
+
+  @include phones {
+    max-width: 260px;
+    text-align: left;
+  }
+}

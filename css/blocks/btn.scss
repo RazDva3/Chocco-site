@@ -1,0 +1,16 @@
+.btn {
+  font-family: AlegreyaSans-ExtraBold;
+  font-weight: 800;
+  width: rem(156px);
+  height: rem(58px);
+  border-radius: rem(40px);
+  background: #fff;
+  text-transform: uppercase;
+  color: #365a49;
+  font-size: rem(19px);
+  margin-top: rem(28px);
+}
+
+.btn:hover {
+  background-color: #2e4e3f;
+}
